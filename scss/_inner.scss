@@ -1,0 +1,23 @@
+.inner-page {
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    background-image: url('../img/pattern-light.jpg');
+}
+.inner-page .main-header {
+    margin-bottom: 70px;
+    background-color: var(--basic-black);
+}
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+    display: flex;
+}
+.inner-page .main-header-logo {
+    order: 0;
+    width: 111px;
+    height: 24px;
+    align-self: center;
+}
+.inner-page .user-navigation {
+    margin-left: auto;
+}

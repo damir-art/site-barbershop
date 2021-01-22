@@ -1,0 +1,53 @@
+/* Модульная сетка */
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+/* Container */
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Index columns */
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    background-image:
+        url(../img/line.png), 
+        url(../img/pattern-light.jpg);
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+}
+.index-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/* Main footer */
+.main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+    color: var(--basic-white);
+    background-color: var(--basic-extra-dark);
+    background-image: url('../img/pattern-dark.jpg');
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

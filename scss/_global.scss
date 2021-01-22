@@ -1,0 +1,99 @@
+/* Переменные */
+:root {
+    --basic-black: #000000;
+    --basic-extra-dark: #242424;
+    --basic-dark: #aba9a7;
+    --basic-neutral: #e5e5e5;
+    --basic-extra-light: #f8f5f2;
+    --basic-white: #ffffff;
+    --special: #663d15;
+}
+
+/* Глобальные стили */
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* Адаптивные изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ссылки */
+a {
+    text-decoration: none;
+}
+
+/* Скрыть текстовые элементы */
+/*
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Подсветка блоков при верстке */
+.outline {
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
+}
+
+/* Стили кнопок */
+.button {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: var(--basic-black);
+}

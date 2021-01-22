@@ -1,0 +1,31 @@
+/* Gallery */
+.gallery {
+    width: 300px;
+}
+.gallery-container {
+    position: relative;
+    height: 260px;
+}
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: var(--basic-dark);
+    border: 7px solid var(--basic-white);
+}
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+.gallery-button {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 140px;
+    margin: 0;
+}
+.gallery-button-back {
+    left: 0;
+}
+.gallery-button-next {
+    right: 0;
+}

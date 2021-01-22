@@ -1,0 +1,13 @@
+/* Product */
+.page-product {
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    align-content: start;
+}
+.page-product .page-title {
+    grid-column: 1 / -1;
+}
+.page-product .breadcrumbs {
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+}
